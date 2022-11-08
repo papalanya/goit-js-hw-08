@@ -30,7 +30,7 @@ function populateInput() {
     if (saveInput) {
         const parsSaveInput = JSON.parse(saveInput);
         textarea.value = parsSaveInput.message || '';
-        form.nextElementSibling.email.value = parsSaveInput.email || '';
+        form.elements.email.value = parsSaveInput.email || '';
     }
 }
 
